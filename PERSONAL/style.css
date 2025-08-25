@@ -1,9 +1,9 @@
 body{
-    background-color: #DBE4C9;
+    background-color: #FFF5F2;
 }
 
 header {
- background-color: #8AA624;
+ background-color: #568F87;
  border-radius: 5px;
  text-align: center;
  padding: 20px;
@@ -40,7 +40,7 @@ header p {
 }
 
 #skills {
-    background-color: #8AA624;
+    background-color: #568F87;
     border-radius: 20px;
     padding: 20px;
 }
@@ -67,7 +67,7 @@ header p {
 }
 
 footer {
-    background-color: #8AA624;
+    background-color: #568F87;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -80,4 +80,14 @@ footer a{
 
 footer a:hover {
     text-decoration: underline;
+}
+
+ul li {
+    background-color: #FFF5F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    transition-duration: 1.5ms;
 }

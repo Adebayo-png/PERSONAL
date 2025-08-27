@@ -3,44 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal</title>
+    <meta http-equiv="refresh" content="100">
+    <title>Adebayo Muhammad Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-    <header>
-        <!--This is my header section-->
-        <img src="WIN_20250823_02_58_31_Pro.jpg" alt="my name" width="200px">
+<body> 
+    <nav>
+        <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Professional">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <img src="WIN_20250823_02_58_31_Pro (2).jpg" alt="Adebayo Muhammad" class="hero-img">
         <h1>Adebayo Muhammad</h1>
-        <p>Frontend Web Developer</p>
-    </header>
+        <p>Frontend Web Developer & Graphics Designer</p>
+    </section>
     <section id="about">
         <h2>About Me</h2>
-        <p> I am a Frontend Developer I Attend Federal Government College I Am Currently In SS2 And I Am Also a Graphics Designer And a Educator I Am Not a Full Front End Developer But I Want To Become a Genius And Also Become a Computer Scientist.</p>
+        <p>I am a passionate Frontend Web Developer and Graphics Designer currently pursuing my education at Federal Government College. With a strong foundation in web development and creative design, I specialize in creating user-friendly websites and engaging digital experiences. Although I'm still in SS2, I'm already gaining hands-on experience in HTML, CSS, and web design principles. My goal is to become an accomplished Computer Scientist while continuing to expand my skills in frontend development and digital innovation.</p>
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>SKill 1</li>
-            <li>SKill 2</li>
-            <li>SKill 3</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-card"><i class="fas fa-paint-brush"></i> Graphics Design</div>
+            <div class="skill-card"><i class="fas fa-code"></i> Web Development</div>
+            <div class="skill-card"><i class="fas fa-object-group"></i> UI Design</div>
+        </div>
     </section>
     <section id="experience">
-       <h2>Professional Experience</h2>
+       <h2 id="Professional">Professional Experience</h2>
        <article>
-            <h3>MUZZY INOVATIONS</h3>
-            <p>Job Duration - e.g., June 2019 - Present</p>
+            <h3>MUHAMMAD INNOVATIONS</h3>
+            <p>Junior Web Developer - August 2024 - Present</p>
             <ul>
-                <li>key responsibility or achievement 1</li>
-                <li>key responsibility or achievement 2</li>
+                <li>Developed and maintained responsive websites using HTML5 and CSS3</li>
+                <li>Created user-friendly interfaces for client websites</li>
+                <li>Collaborated with senior developers on various web projects</li>
+                <li>Designed graphics and visual elements for web applications</li>
+                <li>Participated in weekly team meetings and project planning sessions</li>
             </ul>
        </article>
     </section>
-    <footer>
-        <!--Footer content goes here-->
-        <h2>Contact Me</h2>
-        <p>Email:<a href="Mailto:adebayomuhammad40@gmail.com">adebayomuhammad40@gmail.com</a></p>
-        <p>LinkedIn:<a href="adebayomuhammad" target="_blank">adbayomuhammad</a></p>
+    <footer id="contact">
+        <h2>Contact Me</h2> 
+        <p>
+            <a href="mailto:adebayomuhammad40@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/adebayomuhammad" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Adebayo-png" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
+        <p>&copy; 2025 Adebayo Muhammad</p>
     </footer>
 </body>
 </html>

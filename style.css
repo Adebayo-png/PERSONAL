@@ -1,7 +1,7 @@
 :root {
     --primary-color: #000000;
     --secondary-color: #76bdb3;
-    --gradient-bg: linear-gradient(135deg, #FFF5F2 60%, #000000 100%);
+    --gradient-bg: linear-gradient(135deg, #FFF5F2 60%, #0000 100%);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 1em;
-    z-index: 1000;
+    z-index: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,42 +28,15 @@ body {
     font-weight: bold;
 }
 
-.nav-toggle {
-    display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.5em;
-}
-
-.hamburger {
-    display: block;
-    position: relative;
-     width: 2em;
-    height: 3px;
-    background: white;
-}
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 2em;
-    height: 3px;
-    background: white;
-    transition: transform 0.3s;
-}
-.hamburger::before { top: -8px; }
-.hamburger::after { bottom: -8px; }
 .nav-menu {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 2em;
+    list-style-type: none;
+    gap: 10px;
 }
 
+
 .nav-menu li a {
+    display: flex;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -75,30 +48,7 @@ body {
      color: #333;
 }
 
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
-    .nav-menu {
-        display: none;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-         background: var(--primary-color);
-        padding: 1em 0;
-        flex-direction: column;
-        text-align: center;
-        gap: 0;
-    }
-    .nav-menu.active {
-        display: flex;
-    }
-    .sticky-nav {
-        flex-direction: row;
-        position: sticky;
-    }
-}
+
 
 .hero {
     background: linear-gradient(120deg, var(--primary-color) 30%, var(--secondary-color) 100%);
@@ -193,73 +143,20 @@ footer a:hover {
     color: var(--primary-color);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .skills-grid {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-menu{
         flex-direction: column;
         align-items: center;
     }
 }
 
-/* Slideshow styles */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: 2rem auto;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.slide {
-    display: none;
-}
-
-.slide img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.slide-caption {
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background: rgba(0,0,0,0.8);
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
 
 /* Form styles */
 .form-section {
@@ -288,6 +185,7 @@ footer a:hover {
 }
 
 .submit-btn {
+
     background: #4CAF50;
     color: white;
     padding: 12px 24px;

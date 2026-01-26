@@ -1,53 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adebayo Muhammad Portfolio</title>
+
+  <link rel="shortcut icon" href="images/mm.jpg" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <!--This is my header section-->
-        <img src="WIN_20250823_02_58_31_Pro.jpg" alt="my name" width="200px">
-        <h1>Adebayo Muhammad</h1>
-        <p>Frontend Web Developer</p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p> I am a passionate Frontend Web Developer and Graphics Designer currently pursuing my education at Federal Government College. With a strong foundation in web development and creative design, I specialize in creating user-friendly websites and engaging digital experiences. Although I'm still in SS2, I'm already gaining hands-on experience in HTML, CSS, and web design principles. My goal is to become an accomplished Computer Scientist while continuing to expand my skills in frontend development and digital innovation.</p>
+<body class="open">
+  <div id="loading"> 
+    <h1 class="welcome">WELCOME TO MY PAGE</h1>
+    <h2 class="moveleft">>>>>>>></h2>
+    <img src="images/page.jpg" alt="" width="475px">
+  </div>
+  <!-- NAVBAR -->
+   <div id="main"  style="display:none;">
+  <nav class="nav">
+    <div class="new-nav">
+      <button class="btn"onclick="toggleSidebar()">Nav</button>
+      <div class="sidebar">
+    <ul class="new-grid">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+      </div>
+    </div>
 
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Graphics Design</li>
-          <li>Web Development</li>
-          <li>UI Design</li>
-        </ul>
-    </section>
-    <section id="experience">
-       <h2>Professional Experience</h2>
-       <article>
-            <h3>MUZZY INOVATIONS</h3>
-                    <p>Junior Web Developer - August 2024 - Present</p>
+    <div class="logo">Adebayo</div>
 
-            <ul>
-                <li>Developed and maintained responsive websites using HTML5 and CSS3</li>
-            <li>Created user-friendly interfaces for client websites</li>
-            <li>Collaborated with senior developers on various web projects</li>
-            <li>Designed graphics and visual elements for web applications</li>
-            <li>Participated in weekly team meetings and project planning sessions</li>
-            </ul>
-       </article>
-    </section>
-    <footer>
-        <!--Footer content goes here-->
-        <h2>Contact Me</h2>
-        <p>Email:<a href="Mailto:adebayomuhammad40@gmail.com">adebayomuhammad40@gmail.com</a></p>
-        <p>LinkedIn:<a href="adebayomuhammad" target="_blank">adbayomuhammad</a></p>
-    </footer>
+    <button class="btn"onclick="toggleMode()">🌙</button>
+    
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container">
+      <img src="images/my.png" alt="Adebayo Muhammad" class="hero-img">
+      <h1>Hi, I'm <span>Adebayo Muhammad</span></h1>
+      <p>Creative Frontend Developer & Future Computer Scientist</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-card">
+    <p>I'm a passionate Frontend Developer currently in secondary school. I love creating modern, user-friendly websites and interactive digital experiences. My goal is to become a skilled Computer Scientist while pushing the boundaries of web design and development.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="skill-card"><i class="fas fa-code"></i> Web Development</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience-card">
+      <h3>MUHAMMAD INNOVATIONS</h3>
+      <p>Junior Web Developer | August 2024 - Present</p>
+      <ul>
+        <li>Developed responsive & Interacttive websites, using HTML5 , CSS3 & JAVASCRIPT</li>
+        <li>Created user-friendly interfaces</li>
+        <li>Collaborated with senior developers</li>
+        <li>Designed modern web pages</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="socials">
+      <a href="mailto:muhammad.adebayo.ishola@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/Adebayo-png" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Adebayo Muhammad</p>
+  </footer>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

@@ -85,7 +85,7 @@ a {
   align-items: center;
   text-align: center;
   padding: 100px 10px;
-  background-image: url(images/company.jpg);
+  background-image: url(company.jpg);
   height: 370px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -286,4 +286,5 @@ footer {
     100% {
         transform: translateX(8px);
     }
+
 }
